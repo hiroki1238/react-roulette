@@ -36,5 +36,11 @@
     "lint-staged": "^15.2.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
+  },
+  "lint-staged": {
+    "*.(js|ts)?(x)": [
+      "eslint src/ --fix --ignore-path .gitignore",
+      "prettier --write src/ --ignore-path .gitignore"
+    ]
   }
 }
