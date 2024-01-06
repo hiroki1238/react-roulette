@@ -8,6 +8,10 @@ const useStyles = tss.create({
     fontSize: 44,
     marginTop: 200,
   },
+  message: {
+    fontSize: 80,
+    fontWeight: "bold",
+  },
   button: {
     color: "black",
     fontSize: 16,
@@ -23,23 +27,23 @@ const useStyles = tss.create({
   },
 });
 
-const TopPage = () => {
+const NotFoundPage = () => {
   const { classes } = useStyles();
   const navigate = useNavigate();
 
   return (
     <>
       <div className={classes.root}>
-        <p>こんにちは</p>
-        <Button
-          className={classes.button}
-          onClick={() => navigate("/roulette")}
-        >
-          ルーレット
-        </Button>
+        <div className={classes.message}>
+          <p>404</p>
+          <p>Not Found</p>
+        </div>
       </div>
+      <Button className={classes.button} onClick={() => navigate("/")}>
+        トップに戻る
+      </Button>
     </>
   );
 };
 
-export default TopPage;
+export default NotFoundPage;

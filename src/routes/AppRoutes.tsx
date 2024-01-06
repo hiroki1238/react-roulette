@@ -1,9 +1,8 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import TopPage from '../pages/TopPage'
-import DefaultPage from '../pages/DefaultPage'
-import Roulette from '../pages/RoulettePage'
-import CustomRoulettePage from '../pages/CustomRoulettePage'
-// import NotFoundPage from '../pages/NotFoundPage'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import TopPage from "../pages/TopPage";
+import DefaultPage from "../pages/DefaultPage";
+import RoulettePage from "../pages/RoulettePage";
+import NotFoundPage from "../pages/NotFoundPage";
 
 const AppRoutes = () => {
   return (
@@ -11,12 +10,11 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/default" element={<DefaultPage />} />
         <Route path="/" element={<TopPage />} />
-        <Route path="/roulette" element={<Roulette />} />
-        <Route path="/customroulette" element={<CustomRoulettePage />} />
-        {/* <Route path="*" element={<NotFoundPage />} /> */}
+        <Route path="/roulette" element={<RoulettePage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>
-  )
-}
+  );
+};
 
-export default AppRoutes
+export default AppRoutes;
