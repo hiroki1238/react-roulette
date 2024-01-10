@@ -80,7 +80,7 @@ const Roulette: React.FC<RouletteProps> = ({ names }) => {
             "#043c78",
           ]}
           disableInitialAnimation
-          spinDuration={0.6}
+          spinDuration={0.65}
           onStopSpinning={() => {
             setMustSpin(false);
             setSelectedName(names[prizeNumber].option);
