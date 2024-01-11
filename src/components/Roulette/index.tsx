@@ -2,6 +2,7 @@ import { Button } from "@mui/material";
 import { useEffect, useState } from "react";
 import { Wheel } from "react-custom-roulette";
 import { tss } from "tss-react";
+import logo from "/logo.svg?url";
 
 interface RouletteProps {
   names: { option: string }[];
@@ -86,7 +87,7 @@ const Roulette: React.FC<RouletteProps> = ({ names }) => {
             setSelectedName(names[prizeNumber].option);
           }}
           pointerProps={{
-            src: "../../../public/logo.svg",
+            src: logo,
             style: {
               position: "absolute",
               transform: "rotate(137deg)",
