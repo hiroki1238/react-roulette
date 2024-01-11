@@ -86,7 +86,7 @@ const Roulette: React.FC<RouletteProps> = ({ names }) => {
             setSelectedName(names[prizeNumber].option);
           }}
           pointerProps={{
-            src: "./logo.svg",
+            src: "../../../public/logo.svg",
             style: {
               position: "absolute",
               transform: "rotate(137deg)",
