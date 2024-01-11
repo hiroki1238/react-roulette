@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react-swc";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: process.env.GITHUB_PAGES ? "REPOSITORY_NAME" : "./",
+  base: process.env.GITHUB_PAGES ? "/react-roulette/" : "./",
   server: {
     open: true,
   },
